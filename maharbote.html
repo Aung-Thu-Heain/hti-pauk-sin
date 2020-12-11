@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+    <script src="maharbote.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="maharbote.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b4f9e00100.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <title>lucky_number</title>
+</head>
+     <body>
+        
+            <nav class="navbar navbar-dark navbar-expand-sm" style="background-color:rgb(93, 93, 251);border-bottom:1px solid white;border-top:1px solid white">
+
+                <a class="navbar-brand" href="index.php">PAUKP.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.php">Home </span></a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                      <a class="nav-link" href="rule.html">Rules</a>
+                    </li>
+
+                    <li class="nav-item active">
+                      <a class="nav-link" href="maharbote.html">Lucky number</a>
+                    </li>
+                  
+                  </ul> 
+                </div>
+          </nav>
+
+    
+          <div class="container">  
+           
+
+            
+            <div id="form">
+                <form name="fom">
+                         <div class="form-group">
+                            <input type="text" name="name" required placeholder="အမည်ထည့်ပါ" id="name" class="form-control"maxlength="15">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" maxlength="4"name="year" id="year"placeholder="မွေးသက္ကရာဇ်ခုနှစ် ထည့်ပါ" class="form-control"min="1" >
+                        </div>
+                        <div class="form-group">
+                            <select name="days" id="day"class="form-control">
+                                <option value="Sun">တနင်္ဂနွေနေ့</option>
+                                <option value="Mon">တနင်္လာနေ့</option>
+                                <option value="Tue">အင်္ဂါနေ့</option>
+                                <option value="Wed">ဗုဒ္ဓဟူးနေ့</option> 
+                                <option value="Thu">ကြာသပတေးနေ့</option>
+                                <option value="Fri">သောကြာနေ့</option>
+                                <option value="Sat">စနေနေ့</option>
+                            </select> 
+                        </div>
+        
+                          <span id="eng">
+                            <p id="warn">အင်္ဂလိပ်နှစ်ဖြစ်သည့်အတွက် မွေးလနှင့်မွေးရက်ထည့်ပေးပါ</p>
+                            <div class="form-group">
+                                <select name="month" class="form-control">
+                                    <option value="0">January</option>
+                                    <option value="1">February</option>
+                                    <option value="2">March</option>
+                                    <option value="3">April</option>
+                                    <option value="4">May</option>
+                                    <option value="5">Jun</option>
+                                    <option value="6">July</option>
+                                    <option value="7">August</option>
+                                    <option value="8">September</option>
+                                    <option value="9">October</option>
+                                    <option value="10">November</option>
+                                    <option value="11">December</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="date" required placeholder="မွေးရက်ထည့်ပါ"id="date"class="form-control" min="1"> 
+                            </div>
+                          </span>
+                            
+        
+        
+                                <button class="btn btn-primary  btn-lg" onclick="cal(this.form)"  type="button">တွက်ကြည့်မယ်</button><br>
+        
+                            <div class="form-group">
+                                    <textarea id="textarea" name="textarea"  rows="10" cols="20"  readonly placeholder="မိတ်ဆွေရဲ့ အကျိုးပေးနံပတ်နဲ့ အက္ခရာတွေကဘာတွေဖြစ်မလဲ...."class="form-control"></textarea>
+                            </div>
+                </form>
+                
+        
+                 
+              </div>
+
+             
+         </div>
+        </div>
+
+
+         <div class="row justify-content-center  footer">
+          <div class="col-md-5 col-sm-12 mt-3">
+                 <h6>Our Services</h6>
+                 <ul>
+                        <li><i class="fas fa-tv"></i>&nbsp;Windows installation,Software installation</li>
+                        <li><i class="fas fa-network-wired"></i>&nbsp;Setup small office network and vpn</li>
+                        <li><i class="fas fa-tools"></i>&nbsp;Monthly,Yearly maintain....</li>
+                 </ul>
+
+
+          </div>
+          <div class="col-md-5 col-sm-12 mt-3">
+                 <h6>Contact Us</h6>
+               <ul>
+                      <li><i class="fas fa-map-marked-alt"></i> &nbsp;Yangon,Myanmar</li> 
+                      <li><i class="fas fa-envelope-open-text  "> </i> &nbsp; contact@knowledgehostmm.com</li>
+                      <li><i class="fas fa-phone-square-alt"></i>&nbsp;+95 09257810043</li>
+                      <li><i class="fas fa-phone-square-alt"></i>&nbsp;+95 09697873709</li>
+                             
+                      </li>
+               </ul>
+         </div>
+         
+        
+         <div class="row">
+                <footer> Copyright &copy; 2020 All rights reserved by <a href="https://knowledgehostmm.com"> knowledge Host Myanmar</a></footer>
+         </div>
+   
+      
+            
+          
+        
+           
+             
+           
+     </body>
+        
+</html>

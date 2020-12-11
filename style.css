@@ -1,0 +1,181 @@
+
+/* index.php */
+
+h4{  
+    color: gold;
+    padding:5px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    letter-spacing: inherit;
+    text-decoration: underline;
+    
+}
+h5{
+    color: gold;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+body{
+  
+    background-image: url("images/bg2.jpg");
+    background-attachment: fixed;
+
+}
+
+.show-num{
+    background-image: url("images/bg3.jpg");
+   
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    color: black;
+    padding:2px;
+}
+
+.form-control-lg input{
+    background-color:white;
+    border-bottom: 2px solid gold;
+    border-top:2px solid gold;
+    border-right:1px solid gold;
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 5px;
+
+    
+}
+/* for edit_form */
+.form-control input{
+    background-color:white;
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+    border-right:1px solid black;
+    border-radius: 2px;
+    border-radius: 5px;
+    
+}
+.form-control-lg select{
+    background-color:white;
+    border: 2px solid gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 6px;
+    
+    
+}
+/* for edit_form */
+.form-control select{
+    background-color:white;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;   
+}
+
+.form-control-lg {
+    padding: 6px;
+    border-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.add_form_select{
+    background-color: white;
+}
+
+
+.button{
+    margin:5px;
+    border: 2px solid gold;
+    border-radius: 3em;
+    color: gold;
+    font-weight: bold;
+
+}
+.hu{
+    color: green;
+    text-align: center;
+    border: 1px solid gold;
+    background-color: darkorange;  
+    padding: 5px; 
+    border-radius: 5em;
+}
+
+.letter{
+    color:black;
+}
+
+
+
+/* check.php */
+.prize-result{
+    color: gold;
+    line-height: 2em;
+    font-size: 20px;
+}
+h2{
+    color:gold;
+    font-family: 'Bangers', cursive;
+   
+}
+/* for rule  */
+h1{
+    text-align: center;
+    margin:10px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+.footer{
+    background:black;
+    color:white;
+    text-align: center;
+    margin-top: 0px;
+    border-top: 1px solid white ;
+}
+.footer ul{
+    text-align: left;
+    text-decoration: none;
+    list-style-type:none;
+    color: white;
+    
+   
+}
+h6{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+footer{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid white;
+}
+
+ul li{
+    font-weight: bold;
+}
+.text{
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+}
+.table{
+    background-color: white;
+}
+
+
+
